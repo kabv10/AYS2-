@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown"
+    tools:context=".BookFragment">
+
+    <!-- Navigation bar -->
+    <RelativeLayout
+        android:id="@+id/navbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="48dp"
+            android:layout_height="41dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="At Your Service"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/logoImageView"
+            android:layout_marginStart="8dp"/>
+
+    </RelativeLayout>
+
+
+    <!-- ScrollView for product cards -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/serviceTextView"
+        android:layout_above="@+id/footerLayout"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/serviceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AYS SERVICES"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/navbarLayout"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"/>
+
+            <!-- Updated ImageView ID and adjusted Button layout -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/productImageView"
+                        android:layout_width="181dp"
+                        android:layout_height="148dp"
+                        android:src="@drawable/oil"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="-19dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/productNameTextView"
+                        android:layout_width="129dp"
+                        android:layout_height="41dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toEndOf="@id/productImageView"
+                        android:text="Oil And Fluid Services"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/productDescriptionTextView"
+                        android:layout_width="137dp"
+                        android:layout_height="159dp"
+                        android:layout_below="@id/productNameTextView"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_toEndOf="@id/productImageView"
+                        android:text="Regular oil changes are essential for maintaining the health of a vehicle's engine. This service involves draining old oil, replacing the oil filter, and adding new, clean oil."
+                        android:textSize="11sp" />
+
+                    <!-- Updated Button layout -->
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/productDescriptionTextView"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@id/productImageView"
+                        android:backgroundTint="@color/orange"
+                        android:text="Book Now" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/productImageView1"
+                        android:layout_width="181dp"
+                        android:layout_height="148dp"
+                        android:src="@drawable/brake"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="-19dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/productNameTextView1"
+                        android:layout_width="129dp"
+                        android:layout_height="41dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toEndOf="@id/productImageView1"
+                        android:text="Brake System Maintenance and Repair Service"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/productDescriptionTextView1"
+                        android:layout_width="137dp"
+                        android:layout_height="159dp"
+                        android:layout_below="@id/productNameTextView1"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_toEndOf="@id/productImageView1"
+                        android:text="Brake systems are crucial for vehicle safety. A repairment service can inspect, repair, or replace brake pads, rotors, and other components to ensure proper braking performance."
+                        android:textSize="11sp" />
+
+                    <!-- Updated Button layout -->
+                    <Button
+                        android:id="@+id/button11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/productDescriptionTextView1"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@id/productImageView1"
+                        android:backgroundTint="@color/orange"
+                        android:text="Book Now" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/productImageView2"
+                        android:layout_width="181dp"
+                        android:layout_height="148dp"
+                        android:src="@drawable/diagnostic"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="-19dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/productNameTextView2"
+                        android:layout_width="129dp"
+                        android:layout_height="41dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toEndOf="@id/productImageView2"
+                        android:text="Diagnostic Services"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/productDescriptionTextView2"
+                        android:layout_width="137dp"
+                        android:layout_height="159dp"
+                        android:layout_below="@id/productNameTextView2"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_toEndOf="@id/productImageView2"
+                        android:text="We identify and troubleshoot issues with the vehicle through advanced diagnostic tools and technology and conduct computerized engine diagnostics to pinpoint problems."
+                        android:textSize="11sp" />
+
+                    <!-- Updated Button layout -->
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_below="@id/productDescriptionTextView2"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@id/productImageView2"
+                        android:backgroundTint="@color/orange"
+                        android:text="Book Now" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

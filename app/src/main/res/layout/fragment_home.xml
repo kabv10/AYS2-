@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeFragment"
+    android:background="@color/brown">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/navbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="48dp"
+                android:layout_height="41dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="At Your Service"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/logoImageView"
+                android:layout_marginStart="8dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/ViewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="40dp"
+            android:padding="20dp"/>
+
+
+    </LinearLayout>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_gravity="center"
+       android:text="Contact us"
+       android:textAlignment="center"
+       android:textColor="@color/white"
+       android:textSize="30sp"
+       android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/dropdownSpinner"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:popupBackground="@color/black"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:entries="@array/dropdown_options" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="470dp"
+        android:background="@drawable/edittext_background"
+        android:text="Email: atyourservice@gmail.com"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="540dp"
+        android:background="@drawable/edittext_background"
+        android:text="Contact no: 63 402 221 4820"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+
+
+
+
+
+</FrameLayout>
