@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dropdown_options">
+        <item>M.H. Del Pilar Street, Dagupan City, Philippines</item>
+        <item>Arellano Street, Dagupan City, Philippines</item>
+        <item>Dagupan-Lingayen Rd, Dagupan City, Philippines </item>
+    </string-array>
+</resources>
